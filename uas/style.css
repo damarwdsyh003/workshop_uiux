@@ -155,3 +155,17 @@ article img {
 article p {
 	line-height: 1.6;
 }
+
+.transparent-navbar {
+    background-color: rgba(255, 255, 255, 0.5) !important; /* Warna putih dengan transparansi 50% */
+    border: none;
+}
+
+.transparent-navbar .navbar-nav .nav-link {
+    color: #000 !important; /* Warna teks hitam, sesuaikan dengan kebutuhan */
+}
+
+.transparent-navbar .navbar-nav .nav-link:hover {
+    color: #555 !important; /* Warna teks ketika hover, sesuaikan dengan kebutuhan */
+}
+

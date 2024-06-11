@@ -10,6 +10,15 @@
     <link rel="shortcut icon"
         href="https://cdn4.iconfinder.com/data/icons/iphone-ipad-flat/512/__iPhone_Phone_Apple_Gadget_circle_-512.png"
         type="image/x-icon">
+    <style>
+        /* Custom CSS for responsiveness */
+        @media (max-width: 576px) {
+            /* Reduce font size for smaller screens */
+            .table td, .table th {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -48,43 +57,47 @@
         </div>
     </nav>
 
-
-    <div class="container mt-5">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nomor Pesanan</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Total</th>
-                    <th scope="col">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>123456</td>
-                    <td>2024-05-01</td>
-                    <td>150,00 €</td>
-                    <td><span class="badge bg-success">Selesai</span></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>123457</td>
-                    <td>2024-04-25</td>
-                    <td>200,00 €</td>
-                    <td><span class="badge bg-warning">Proses</span></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>123458</td>
-                    <td>2024-04-20</td>
-                    <td>100,00 €</td>
-                    <td><span class="badge bg-danger">Dibatalkan</span></td>
-                </tr>
-                <!-- Tambahkan riwayat pemesanan lainnya di sini -->
-            </tbody>
-        </table>
+    <div class="container-fluid mt-5">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Produk</th>
+                        <th scope="col">Nama Produk</th>
+                        <th scope="col">Nomor Pesanan</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/sec-7-1.jpg" alt="Product 1" class="img-thumbnail" width="100"></td>
+                        <td>HP Victus 15</td>
+                        <td>123456</td>
+                        <td>2024-05-01</td>
+                        <td>Rp 10.038.000</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/produk2.jpg" alt="Product 1" class="img-thumbnail" width="100"></td>
+                        <td>Acer Nitro 5</td>
+                        <td>654321</td>
+                        <td>2024-04-15</td>
+                        <td>Rp 13.139.000</td>
+                        <td><span class="badge bg-success">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/produk3.jpg" alt="Product 1" class="img-thumbnail" width="100"></td>
+                        <td>Dell Alienware M15</td>
+                        <td>162534</td>
+                        <td>2024-04-01</td>
+                        <td>Rp 30.999.000</td>
+                        <td><span class="badge bg-danger">Cancel</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

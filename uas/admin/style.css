@@ -1,0 +1,124 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    padding-top: 60px;
+}
+
+.sidebar ul.navbar-nav li.nav-item {
+    margin-bottom: 10px;
+}
+
+.sidebar ul.navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+    padding: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.chart {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contoh style untuk grafik */
+.bar {
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 10px;
+    transition: height 0.5s ease;
+}
+
+/* Tambahkan style untuk label atau nilai pada chart */
+.bar p {
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+canvas {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; /*Tambahkan margin-bottom agar tidak terlalu rapat dengan menu*/
+    margin-left:32%;
+}
+
+.navbar-brand i {
+    margin-right: 5px;
+}
+
+.navbar-nav {
+    width: 100%;
+    padding: 0;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}

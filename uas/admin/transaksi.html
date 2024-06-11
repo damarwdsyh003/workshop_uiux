@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Kelola Transaksi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Kelola Transaksi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a class="navbar-brand" href="main.html">TechnoCo</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <br><br><a class="nav-link" href="main.html"><i class="fas fa-home"></i> Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="artikel.html"><i class="fas fa-newspaper"></i> Kelola Artikel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="produk.html"><i class="fas fa-users"></i> Kelola Produk</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pengguna.html"><i class="fas fa-chart-bar"></i> Kelola Pengguna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="transaksi.html"><i class="fas fa-chart-bar"></i> Kelola Transaksi</a>
+            </li>
+            <!-- Tambahkan tautan menu lainnya sesuai kebutuhan -->
+            <li class="nav-item">
+                <a class="nav-link" href="../landing_page.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Konten utama -->
+        <div class="container">
+            <h2>Kelola Transaksi</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nomor Transaksi</th>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>123456</td>
+                            <td>2024-05-01</td>
+                            <td>Rp 10.038.000</td>
+                            <td><span class="badge bg-warning">Pending</span></td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm" onclick="DetailTransaksi1()">Detail</a>
+                                <button class="btn btn-danger btn-sm" onclick="hapusTransaksi()">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>654321</td>
+                            <td>2024-04-15</td>
+                            <td>Rp 13.139.000</td>
+                            <td><span class="badge bg-success">Complete</span></td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm" onclick="DetailTransaksi2()">Detail</a>
+                                <button class="btn btn-danger btn-sm" onclick="hapusTransaksi()">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>162534</td>
+                            <td>2024-04-01</td>
+                            <td>Rp 30.999.000</td>
+                            <td><span class="badge bg-danger">Cancel</span></td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm" onclick="DetailTransaksi3()">Detail</a>
+                                <button class="btn btn-danger btn-sm" onclick="hapusTransaksi()">Hapus</button>
+                            </td>
+                        </tr>
+                        <!-- Tambahkan lebih banyak transaksi atau fungsionalitas sesuai kebutuhan -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript bundle dengan Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function hapusTransaksi() {
+            if (confirm('Apakah Anda yakin ingin menghapus transaksi ini?')) {
+                alert('Transaksi berhasil dihapus.');
+                // Logic untuk menghapus transaksi dari database atau melakukan aksi lainnya
+            }
+        }
+
+        function DetailTransaksi1() {
+            alert('Transaksi ini belum terselesaikan');
+        }
+
+        function DetailTransaksi2() {
+            alert('Transaksi ini sudah terselesaikan');
+        }
+
+        function DetailTransaksi3() {
+            alert('Transaksi ini dibatalkan');
+        }
+    </script>
+</body>
+
+</html>
